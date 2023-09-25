@@ -1,0 +1,7 @@
+{
+  "name": "StopCar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
