@@ -1,4 +1,4 @@
-<h3 align="center">This application was developed entirely for my Final Paper for the I.T course<br>It was done in about six months, where I had basically one day per week to develop<br>The code was developed using Ionic, TypeScript, HTML and SCSS<br>The database connection was done using Google's firebase service</h3>
+<h3 align="center">This application was developed entirely for my Final Paper for the I.T course.<br>It was done in about six months, where I had basically one day per week to develop.<br>The code was developed using Ionic, TypeScript, HTML and SCSS<br>The database connection was done using Google's firebase service.</h3>
 
 ###
 
