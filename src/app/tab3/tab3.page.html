@@ -1,17 +1,75 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar style="height: 50px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+  <div class="ion-text-center" style="display: flex-center; margin-top: -12px;">
+    <ion-icon name="location-outline"></ion-icon>
+    <ion-label>Av. Getúlio Vargas, 4388</ion-label>
+  </div>
+</ion-toolbar>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<div class="banner"></div>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-img src="assets/bate-papo.png" class="ion-text-center" style="height: 65px; margin-top: -88px; position: relative; z-index: 999;"></ion-img>
+
+<ion-content>
+
+  <div class="line"></div>
+  <div class="UNot">
+    <p style="color: white; padding-top: 21px; font-size: x-large;">Conversas Recentes</p>
+  </div>
+
+  <!-- Chat1 -->
+
+  <div class="ChatP" style="margin-top: 15px; border-top: 1px gray solid;" (click)="navigateToChatPage()">
+    <div style="display: flex;">
+      <div class="CP">
+        <ion-img src="assets/paulinho.png" style="border: 2px #FF4500 solid; border-radius: 50%;"></ion-img>
+      </div>
+        <div style="display: inline;">
+          <p style="color: black; font-size: small;">Paulinho Car</p>
+          <p style="color: gray; margin-top: -7px; font-size: small;">Aqui aparecerá a última mensagem!</p>
+        </div>
+      </div>
+  </div>
+
+    <!-- Chat2 -->
+
+    <div class="ChatP" (click)="navigateToChatPage()">
+      <div style="display: flex;">
+        <div class="CP">
+          <ion-img src="assets/auto.png" style="border: 2px #FF4500 solid; border-radius: 50%;"></ion-img>
+        </div>
+          <div style="display: inline;">
+            <p style="color: black; font-size: small;">Auto Repair</p>
+            <p style="color: gray; margin-top: -7px; font-size: small;">Aqui aparecerá a última mensagem!</p>
+          </div>
+        </div>
+    </div>
+
+      <!-- Chat3 -->
+
+  <div class="ChatP" (click)="navigateToChatPage()">
+    <div style="display: flex;">
+      <div class="CP">
+        <ion-img src="assets/parada.png" style="border: 2px #FF4500 solid; border-radius: 50%;"></ion-img>
+      </div>
+        <div style="display: inline;">
+          <p style="color: black; font-size: small;">Parada Segura</p>
+          <p style="color: gray; margin-top: -7px; font-size: small;">Aqui aparecerá a última mensagem!</p>
+        </div>
+      </div>
+  </div>
+
+    <!-- Chat4 -->
+
+    <div class="ChatP" (click)="navigateToChatPage()">
+      <div style="display: flex;">
+        <div class="CP">
+          <ion-img src="assets/mecha.png" style="border: 2px #FF4500 solid; border-radius: 50%;"></ion-img>
+        </div>
+          <div style="display: inline;">
+            <p style="color: black; font-size: small;">Mechanica</p>
+            <p style="color: gray; margin-top: -7px; font-size: small;">Aqui aparecerá a última mensagem!</p>
+          </div>
+        </div>
+    </div>
+
 </ion-content>

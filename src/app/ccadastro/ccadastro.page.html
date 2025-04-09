@@ -1,0 +1,27 @@
+<ion-toolbar class="header">
+  <ion-img src="assets/logo2.png" style="margin: 0 auto; margin-top: 250px; height: 80px;"></ion-img>
+ </ion-toolbar>
+
+<ion-content>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 35px;">
+      <input type="text" id="marca" style="color: black;">
+      <span>Marca do veículo</span>
+    </div>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 7px;">
+      <input type="number" id="ano" style="color: black;">
+      <span>Ano</span>
+    </div>
+
+    <div class="Bot" (click)="signUp()" style="margin-top: 20px;">
+      <button type="submit" style="padding-top: 8px; background: none; font-size: medium;">Cadastrar</button>
+    </div>
+
+    <div class="ABot">
+      <p (click)="navigateToVeiPage()" style="font-size: small; color: #FF8112;">Voltar</p>
+    </div>
+
+    </ion-content>

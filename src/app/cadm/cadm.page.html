@@ -1,0 +1,55 @@
+<ion-toolbar class="header">
+  <ion-img src="assets/logo2.png" style="margin: 0 auto; margin-top: 250px; height: 80px;"></ion-img>
+ </ion-toolbar>
+
+<ion-content>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 35px;">
+      <input type="text" required="required" id="Nome" style="color: black;">
+      <span>Nome</span>
+    </div>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 7px;">
+      <input type="text" required="required" id="Email" style="color: black;">
+     <span>Email</span>
+    </div>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 7px;">
+      <input type="number" required="required" id="Telefone" style="color: black;">
+      <span>Telefone</span>
+    </div>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 7px;">
+      <input type="number" required="required" id="CEP" style="color: black;">
+      <span>CEP</span>
+    </div>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 7px;">
+      <input type="number" required="required" id="CNPJ" style="color: black;">
+      <span>CNPJ</span>
+    </div>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 7px;">
+      <input type="password" required="required" id="Senha" style="color: black;">
+      <span>Senha</span>
+    </div>
+
+    <div class="SBot">
+      <p (click)="navigateToCadPage()" style="font-size: smaller; color: #FF8112;">Cadastro usuário</p>
+    </div>
+
+    <div class="Bot" (click)="navigateToMenuPage()">
+      <button type="submit" style="padding-top: 8px; background: none; font-size: medium;">Cadastrar-se</button>
+    </div>
+
+    <div class="ABot">
+      <p (click)="navigateToLogPage()" style="font-size: small; color: #FF8112;">Login</p>
+    </div>
+
+  </ion-content>

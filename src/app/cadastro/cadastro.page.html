@@ -1,0 +1,80 @@
+<ion-toolbar class="header">
+  <ion-img src="assets/logo2.png" style="margin: 0 auto; margin-top: 250px; height: 80px;"></ion-img>
+ </ion-toolbar>
+
+<ion-content>
+
+  <form [formGroup]="regForm" novalidate>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 35px;">
+      <input formControlName="fullname" type="text" required="required" id="Nome" style="color: black;">
+      <span>Nome</span>
+    </div>
+
+    <!-- Pop -->
+    <div *ngIf="this.regForm.controls?.['fullname'].touched && this.regForm.controls?.['fullname'].invalid">
+      <ion-text *ngIf="errorControl.fullname.errors?.required" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Campo obrigatório!
+      </ion-text>
+    </div>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 7px;">
+      <input formControlName="email" type="text" required="required" id="Email" style="color: black;">
+     <span>Email</span>
+    </div>
+
+    <!-- Pop -->
+    <div *ngIf="this.regForm.controls?.['email'].touched && this.regForm.controls?.['email'].invalid">
+      <ion-text *ngIf="errorControl.email.errors?.required" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Campo obrigatório!
+      </ion-text>
+      <ion-text *ngIf="errorControl.email.errors?.pattern" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Requer um email válido!
+      </ion-text>
+    </div>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 7px;">
+      <input formControlName="number" type="number" required="required" id="Telefone" style="color: black;">
+      <span>Telefone</span>
+    </div>
+
+    <!-- Pop -->
+    <div *ngIf="this.regForm.controls?.['number'].touched && this.regForm.controls?.['number'].invalid">
+      <ion-text *ngIf="errorControl.number.errors?.required" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Campo obrigatório!
+      </ion-text>
+    </div>
+
+    <!-- Caixa -->
+    <div class="InBox" style="margin-top: 7px;">
+      <input formControlName="password" type="password" required="required" id="Senha" style="color: black;">
+      <span>Senha</span>
+    </div>
+
+    <!-- Pop -->
+    <div *ngIf="this.regForm.controls?.['password'].touched && this.regForm.controls?.['password'].invalid">
+      <ion-text *ngIf="errorControl.password.errors?.required" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Campo obrigatório! <br>
+      </ion-text>
+      <ion-text *ngIf="errorControl.password.errors?.pattern" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Requer pelo menos 1 letra, 1 letra maíuscula, 1 número e 8 dígitos!
+      </ion-text>
+    </div>
+  </form>
+
+    <div class="SBot">
+      <p (click)="navigateToCadMecPage()" style="font-size: smaller; color: #FF8112;">Cadastrar minha mecânica</p>
+    </div>
+
+    <div class="Bot" (click)="signUp()">
+      <button type="submit" style="padding-top: 8px; background: none; font-size: medium;">Cadastrar-se</button>
+    </div>
+
+    <div class="ABot">
+      <p (click)="navigateToLogPage()" style="font-size: small; color: #FF8112;">Login</p>
+    </div>
+
+  </ion-content>

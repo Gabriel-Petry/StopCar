@@ -1,0 +1,143 @@
+.caixas {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.caixa {
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 15%;
+    box-shadow: inset 0px 0px 10px rgba(255, 79, 20, 0.5);
+}
+
+.caixaSlider {
+    position: relative;
+    height: 175px;
+    width: 345px;
+    background-image: url('/assets/slider.png');
+    background-size: 110%;
+    background-position: right;
+    background-color: #FF1E00;
+    margin: auto;
+    margin-top: 18px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0px 7px 10px rgb(255, 73, 17);
+}
+
+.t-slider {
+    padding-top: 30px;
+    font-size: larger;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.c-sMais {
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    margin: auto;
+    border-radius: 45px;
+}
+
+.t-sMais {
+    color: #FF4A13;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.sEc {
+    position: relative;
+}
+
+.UMec {
+    padding-top: 22px;
+}
+
+.MecR {
+    padding-top: 10px;
+}
+
+.BP {
+    width: 335px;
+    height: 30px;
+    border: 1px #FF4500 solid;
+    margin: 0 auto;
+    margin-top: 8px;
+    border-radius: 25px;
+}
+
+.BP input {
+    background: none;
+    border: none;
+    padding: 6px;
+    color: black;
+    outline: none;
+    width: 300px;
+}
+
+.PC {
+    border-radius: 100%;
+    border: 1px #FF4500 solid;
+    width: 80px;
+    height: 80px;
+    margin-left: 16px;
+    margin-top: 8px;
+    display: flex;
+}
+
+.Bola {
+    text-align: center;
+}
+
+.Bola p{
+    color: black;
+    margin-top: 1px;
+    font-size: small;
+    margin-left: 16px;
+}
+
+.DISC {
+    display: flex;
+    margin-left: 16px;
+    margin-top: -10px;
+}
+
+.Ret {
+    height: 140px;
+    width: 110px;
+    border: 1px #FF4500 solid;
+    border-radius: 10px;
+    margin-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.Ret p{
+    color: black;
+    margin-top: 1px;
+    font-size: small;
+}
+
+.NQ p{
+    color: black;
+    margin-top: 1px;
+    font-size: small;
+    text-align: center;
+}
+
+.DISC p{
+    font-size: x-small;
+    margin-top: 2.5px;
+}
+
+.scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}

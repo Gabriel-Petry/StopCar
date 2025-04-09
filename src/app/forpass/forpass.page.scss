@@ -1,0 +1,77 @@
+.header {
+    background: linear-gradient(to bottom, #FF1E00, #FF8112);
+    width: 200%;
+    height: 400px;
+    border-radius: 100%;
+    margin-top: -215px;
+    margin-left: -50%;
+}
+
+.InBox {
+    width: 300px;
+    margin-left: 48px;
+    padding: 8px;
+    position: relative;
+}
+
+.InBox input {
+    height: 37px;
+    width: 280px;
+    background: white;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #FF7145;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    transition: 0.25s;
+}
+
+.InBox span {
+    position: absolute;
+    color: #4a4a4a;
+    left: 0;
+    padding-left: 22px;
+    padding-top: 10px;
+    pointer-events: none;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.InBox input:valid ~ span,
+.InBox input:focus ~ span
+{
+    color: #ff0000;
+    transform: translateY(-7px) translateX(22px);
+    font-size: smaller;
+    padding: 0 10px;
+    background: white;
+    border-left: 1px solid #FF7145;
+    border-right: 1px solid #FF7145;
+    letter-spacing: 0.2em;
+}
+
+.InBox input:valid,
+.InBox input:focus
+{
+    border: 1px solid #FF7145;
+}
+
+.Bot {
+    background: #FF8112;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.ABot {
+    text-align: center;
+    margin: 0 auto;
+    width: 70px;
+}

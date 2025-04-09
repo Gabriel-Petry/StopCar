@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "stopcar-f3050": {
+      "hosting": {
+        "app": [
+          "stopcar-f3050"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "stopcar-f3050"
+  }
+}

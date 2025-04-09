@@ -1,0 +1,61 @@
+.banner {
+    height: 0;
+    width: 275px;
+    border-top: 125px solid #FF8112;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    margin: 0 auto;
+    margin-top: -15px;
+    position: relative;
+}
+
+.line {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: #FF8112;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.line p{
+    font-size: large;
+    font-weight: 900;
+}
+
+.desc {
+    width: 370px;
+    max-height: 300px;
+    border: 1px #FF4500 solid;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.caixa {
+    height: 200px;
+    width: 170px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px rgba(255, 79, 20, 0.5);
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.caixasE {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}

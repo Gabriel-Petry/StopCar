@@ -1,0 +1,43 @@
+ .banner {
+    height: 0;
+    width: 250px;
+    border-top: 85px solid #FF8112;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+
+.UNot {
+    position: relative;
+    height: 70px;
+    width: 300px;
+    background: linear-gradient(to right, #FF8112, #FF1E00);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: -60px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+.line {
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background: #FF8112;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.ChatP {
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px gray solid;
+}
+
+.CP {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    padding: 10px;
+}

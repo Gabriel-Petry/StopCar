@@ -1,17 +1,163 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <ion-toolbar style="height: 100px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+    <ion-img src="assets/logo.png" style="height: 35px; margin-top: 10px;"></ion-img>
+    <div class="ion-text-center" style="display: flex-center; margin-top: 8px;">
+      <ion-icon name="location-outline"></ion-icon>
+      <ion-label>Av. Getúlio Vargas, 4388</ion-label>
+    </div>
   </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- Barra de pesquisa -->
+
+  <div class="BP">
+    <ion-icon name="search-outline" style="color: gray; padding-left: 5px; "></ion-icon>
+    <input type="text" placeholder="Busque aqui sua mecânica!">
+  </div>
+
+  <!-- Botões Premium/Veículos/Promoções -->
+
+  <div class="caixas">
+    <div class="caixa" (click)="navigateToNotPage()">
+      <ion-img src="assets/not.png" style=" height: 65px; padding-top: 10px; padding-bottom: 3px;"></ion-img>
+      <p style="color: black; font-size:small; margin: auto; text-align: center;">Notificações</p>
+    </div>
+    <div class="caixa" (click)="navigateToPremiumPage()">
+      <ion-img src="assets/premium.png" style=" height: 65px; padding-top: 10px; padding-bottom: 3px;"></ion-img>
+      <p style="color: black; font-size:small; margin: auto; text-align: center;">Premium</p>
+    </div>
+    <div class="caixa" (click)="navigateToVeiculosPage()">
+      <ion-img src="assets/carros.png" style=" height: 65px; padding-top: 10px; padding-bottom: 3px;"></ion-img>
+      <p style="color: black; font-size:small; margin: auto; text-align: center;">Veículos</p>
+    </div>
+  </div>
+
+  <!-- "Slider" -->
+
+  <div class="sEc">
+    <div class="caixaSlider">
+      <p class="t-slider">Conheça as melhores<br>oficinas de sua região.</p>
+      <div class="c-sMais">
+        <p class="t-sMais">Saiba mais</p>
+      </div>
+    </div>
+      <img src="assets/carro.png" alt="carro" style="position: absolute; bottom: 0; right: 0; z-index: 2;">
+  </div>
+
+  <!-- Círculos de perfis -->
+
+  <div class="UMec">
+    <ion-label style="color: black; padding: 16px;">Últimas Mecânicas</ion-label>
+  </div>
+
+  <!-- P1 -->
+  <div style="display: flex;">
+    <div class="Bola">
+      <div class="PC"><img src="assets/paulinho.png"></div>
+      <p>Paulinho Car</p>
+      <div class="DISC">
+        <ion-icon name="star-half-outline" style="color: gold;"></ion-icon>
+        <p style="margin-left: 1px;">5,0</p>
+        <p>4,9km</p>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="Bola">
+      <div class="PC"><img src="assets/auto.png" style="margin-left: 1px;"></div>
+      <p>Auto Repair</p>
+      <div class="DISC">
+        <ion-icon name="star-half-outline" style="color: gold;"></ion-icon>
+        <p style="margin-left: 1px;">2,3</p>
+        <p>1,7km</p>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="Bola">
+      <div class="PC"><img src="assets/parada.png" style="margin-left: 1px;"></div>
+      <p>Parada Segura</p>
+      <div class="DISC">
+        <ion-icon name="star-half-outline" style="color: gold;"></ion-icon>
+        <p style="margin-left: 1px;">4,6</p>
+        <p>5,2km</p>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="Bola">
+      <div class="PC"><img src="assets/mecha.png"></div>
+      <p>Mechanica</p>
+      <div class="DISC">
+        <ion-icon name="star-half-outline" style="color: gold;"></ion-icon>
+        <p style="margin-left: 1px;">3,8</p>
+        <p>2,7km</p>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Recomendadas -->
+
+  <div class="MecR">
+    <ion-label style="color: black; padding: 16px;">Mecânicas Recomendadas</ion-label>
+  </div>
+
+  <!-- RetP1 -->
+  <div class="scroll">
+    <div style="display: flex;">
+      <div class="NQ">
+        <div class="Ret">
+          <div  class="PC"><img src="assets/mecha.png"></div>
+          <p>Mechanica</p>
+            <div class="DISC">
+              <ion-icon name="star-half-outline" style="color: gold;"></ion-icon>
+              <p style="margin-left: 1px;">3,8</p>
+              <p style="padding-left: 15px;">2,7km</p>
+            </div>
+        </div>
+      </div>
+
+    <!-- RetP2 -->
+
+    <div class="NQ">
+      <div class="Ret">
+        <div  class="PC"><img src="assets/parada.png"></div>
+        <p>Parada Segura</p>
+          <div class="DISC">
+            <ion-icon name="star-half-outline" style="color: gold;"></ion-icon>
+            <p style="margin-left: 1px;">4,6</p>
+            <p style="padding-left: 15px;">5,2km</p>
+          </div>
+      </div>
+    </div>
+
+    <!-- RetP3 -->
+
+    <div class="NQ">
+      <div class="Ret">
+        <div  class="PC"><img src="assets/paulinho.png"></div>
+        <p>Paulinho Car</p>
+          <div class="DISC">
+            <ion-icon name="star-half-outline" style="color: gold;"></ion-icon>
+            <p style="margin-left: 1px;">5,0</p>
+            <p style="padding-left: 15px;">4,9km</p>
+          </div>
+      </div>
+    </div>
+
+    <!-- RetP4 -->
+
+    <div class="NQ">
+      <div class="Ret">
+        <div  class="PC"><img src="assets/auto.png"></div>
+        <p>Auto Repair</p>
+          <div class="DISC">
+            <ion-icon name="star-half-outline" style="color: gold;"></ion-icon>
+            <p style="margin-left: 1px;">2,3</p>
+            <p style="padding-left: 15px;">1,7km</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

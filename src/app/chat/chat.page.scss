@@ -1,0 +1,52 @@
+.banner {
+    height: 0;
+    width: 250px;
+    border-top: 125px solid #FF8112;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+
+.line {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: #FF8112;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.line p{
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    border: 1px #ff4500 solid;
+    position: absolute;
+    bottom: 0px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.BP {
+    width: 335px;
+    height: 30px;
+    border: 1px #FF4500 solid;
+    margin: 0 auto;
+    margin-top: 8px;
+    border-radius: 25px;
+}
+
+.BP input {
+    background: none;
+    border: none;
+    padding: 6px;
+    color: black;
+    outline: none;
+    width: 300px;
+}

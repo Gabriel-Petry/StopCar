@@ -1,0 +1,38 @@
+<ion-toolbar style="height: 50px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+  <div class="ion-text-center" style="display: flex-center; margin-top: -12px;">
+    <ion-icon name="location-outline"></ion-icon>
+    <ion-label>Av. Getúlio Vargas, 4388</ion-label>
+  </div>
+</ion-toolbar>
+
+<div class="banner"></div>
+
+<ion-img src="assets/car.png" class="ion-text-center" style="height: 65px; margin-top: -88px; position: relative; z-index: 999;"></ion-img>
+
+<ion-content >
+
+  <div class="line"></div>
+  <div class="UNot">
+    <p style="color: white; padding-top: 21px; font-size: x-large;">Seus veículos</p>
+  </div>
+
+  <div class="caixasE">
+    <div class="caixa" (click)="navigateToCadCarroPage()">
+      <ion-icon name="add-outline" size="large" style="color: black; margin-top: 45px;"></ion-icon>
+      <p class="ion-text-center" style="color: black;">Cadastre seu carro<br>aqui!</p>
+    </div>
+    <div class="caixa">
+      <ion-img src="assets/lock.png" class="ion-text-center" style="height: 76px; margin-top: 25px;"></ion-img>
+      <p class="ion-text-center" style="color: black; padding-top: 10px;">Exclusivo para assinantes premium.</p>
+    </div>
+  </div>
+
+  <div class="caixa2">
+    <p style="font-weight: 600; color: #FF4500;">Seja nosso assinante e utilize o melhor do nosso aplicativo.</p>
+  </div>
+
+  <div class="US" (click)="navigateToPremiumPage()">
+    <p style="color: white; padding-top: 15px; font-size: large;">Saiba mais</p>
+  </div>
+
+</ion-content>

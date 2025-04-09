@@ -1,0 +1,20 @@
+<ion-toolbar class="header">
+  <ion-img src="assets/logo2.png" style="margin: 0 auto; margin-top: 250px; height: 80px;"></ion-img>
+ </ion-toolbar>
+
+<ion-content>
+
+    <div class="InBox" style="margin-top: 55px;">
+      <input [(ngModel)]="email" type="text" style="color: black;">
+     <span>Email</span>
+    </div>
+
+    <div class="Bot" (click)="resetPassword()">
+      <p style="padding-top: 8px;">Receber email</p>
+    </div>
+
+    <div class="ABot">
+      <p (click)="navigateToLogPage()" style="font-size: small; color: #FF8112; text-align: center;">Voltar</p>
+    </div>
+
+  </ion-content>

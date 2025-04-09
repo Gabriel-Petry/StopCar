@@ -1,0 +1,49 @@
+ <ion-toolbar class="header">
+  <ion-img src="assets/logo2.png" style="margin: 0 auto; margin-top: 250px; height: 80px;"></ion-img>
+ </ion-toolbar>
+
+<ion-content>
+   <form [formGroup]="logForm" novalidate>
+    <div class="InBox" style="margin-top: 55px;">
+      <input formControlName="email" type="text" required="required" style="color: black;">
+     <span>Email</span>
+    </div>
+    <div *ngIf="this.logForm.controls?.['email'].touched && this.logForm.controls?.['email'].invalid">
+      <ion-text *ngIf="errorControl.email.errors?.required" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Campo obrigatório!
+      </ion-text>
+      <ion-text *ngIf="errorControl.email.errors?.pattern" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Requer um email válido!
+      </ion-text>
+    </div>
+
+    <div class="InBox" style="margin-top: 7px;">
+      <input formControlName="password" type="password" required="required" id="Senha" style="color: black;">
+      <span>Senha</span>
+    </div>
+    <div *ngIf="this.logForm.controls?.['password'].touched && this.logForm.controls?.['password'].invalid">
+      <ion-text *ngIf="errorControl.password.errors?.required" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Campo obrigatório! <br>
+      </ion-text>
+      <ion-text *ngIf="errorControl.password.errors?.pattern" style="color: black; margin-left: 60px; font-size: 10px;">
+        *Requer pelo menos 1 letra, 1 letra maíuscula, 1 número e 8 dígitos!
+      </ion-text>
+    </div>
+
+    <div class="SBot">
+      <p (click)="navigateToFPPage()" style="font-size: smaller; color: #FF8112;">Esqueci minha senha</p>
+    </div>
+
+  </form>
+
+    <div class="Bot" (click)="log()">
+      <p style="padding-top: 8px;">Fazer login</p>
+    </div>
+
+    <div class="ABot">
+      <p (click)="navigateToCadPage()" style="font-size: small; color: #FF8112; text-align: center;">Criar conta</p>
+    </div>
+
+    <p style="font-size: small; color: #FF8112; text-align: start; position: absolute; bottom: 0px; margin-left: 15px;" (click)="navigateToMenuPage()">Entrada sem login</p>
+
+  </ion-content>

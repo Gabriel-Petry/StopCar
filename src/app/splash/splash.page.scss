@@ -1,0 +1,12 @@
+ ion-content {
+    --background:white;
+ }
+
+ @-webkit-keyframes fade-out{0%{opacity:1}100%{opacity:0}}@keyframes fade-out{0%{opacity:1}100%{opacity:0}}
+ .container {
+    -webkit-animation:fade-out 2.5s ease-out both;animation:fade-out 2.5s ease-out both;
+    img{
+        width: 400px;
+        height: 628px;
+    }
+ }
